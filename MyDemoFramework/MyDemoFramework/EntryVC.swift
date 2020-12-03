@@ -8,9 +8,9 @@
 
 import UIKit
 
-class EntryVC: UIViewController {
+public class EntryVC: UIViewController {
 
-    override func viewDidLoad() {
+    override public func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
