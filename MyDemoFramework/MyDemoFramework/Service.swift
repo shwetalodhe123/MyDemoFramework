@@ -27,8 +27,10 @@ public class Service{
            let podBundle = Bundle(for: EntryVC.self)
 
            let bundleURL = podBundle.url(forResource: "Service", withExtension: "bundle")
-           let bundle = Bundle(url: bundleURL!)!//
-           let storyboard = UIStoryboard(name: "First", bundle: bundle)
+          // let bundle = Bundle(url: bundleURL!)!//
+        
+           let mainBundle = Bundle.main
+           let storyboard = UIStoryboard(name: "First", bundle: mainBundle)
            let vc = storyboard.instantiateInitialViewController()!
            caller.present(vc, animated: true, completion: nil)
     }
