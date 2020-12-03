@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		99584C3C257928F000A9B03D /* MyDemoFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 99584C3A257928F000A9B03D /* MyDemoFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		99584C432579290400A9B03D /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99584C422579290400A9B03D /* Service.swift */; };
+		99584C4725794DDD00A9B03D /* First.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99584C4625794DDD00A9B03D /* First.storyboard */; };
+		99584C4925794ED000A9B03D /* EntryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99584C4825794ED000A9B03D /* EntryVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -16,6 +18,8 @@
 		99584C3A257928F000A9B03D /* MyDemoFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyDemoFramework.h; sourceTree = "<group>"; };
 		99584C3B257928F000A9B03D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		99584C422579290400A9B03D /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		99584C4625794DDD00A9B03D /* First.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = First.storyboard; sourceTree = "<group>"; };
+		99584C4825794ED000A9B03D /* EntryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +52,8 @@
 		99584C39257928F000A9B03D /* MyDemoFramework */ = {
 			isa = PBXGroup;
 			children = (
+				99584C4625794DDD00A9B03D /* First.storyboard */,
+				99584C4825794ED000A9B03D /* EntryVC.swift */,
 				99584C3A257928F000A9B03D /* MyDemoFramework.h */,
 				99584C3B257928F000A9B03D /* Info.plist */,
 				99584C422579290400A9B03D /* Service.swift */,
@@ -125,6 +131,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99584C4725794DDD00A9B03D /* First.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,6 +143,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				99584C432579290400A9B03D /* Service.swift in Sources */,
+				99584C4925794ED000A9B03D /* EntryVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,9 +290,10 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.theiOSDev.MyDemoFramework;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -308,8 +317,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.theiOSDev.MyDemoFramework;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
