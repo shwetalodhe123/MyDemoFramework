@@ -11,6 +11,7 @@
 		99584C432579290400A9B03D /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99584C422579290400A9B03D /* Service.swift */; };
 		99584C4725794DDD00A9B03D /* First.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99584C4625794DDD00A9B03D /* First.storyboard */; };
 		99584C4925794ED000A9B03D /* EntryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99584C4825794ED000A9B03D /* EntryVC.swift */; };
+		995D955A257A277400252022 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 995D9559257A277400252022 /* Storyboard.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		99584C422579290400A9B03D /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		99584C4625794DDD00A9B03D /* First.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = First.storyboard; sourceTree = "<group>"; };
 		99584C4825794ED000A9B03D /* EntryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryVC.swift; sourceTree = "<group>"; };
+		995D9559257A277400252022 /* Storyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			isa = PBXGroup;
 			children = (
 				99584C4625794DDD00A9B03D /* First.storyboard */,
+				995D9559257A277400252022 /* Storyboard.storyboard */,
 				99584C4825794ED000A9B03D /* EntryVC.swift */,
 				99584C3A257928F000A9B03D /* MyDemoFramework.h */,
 				99584C3B257928F000A9B03D /* Info.plist */,
@@ -132,6 +135,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				99584C4725794DDD00A9B03D /* First.storyboard in Resources */,
+				995D955A257A277400252022 /* Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
