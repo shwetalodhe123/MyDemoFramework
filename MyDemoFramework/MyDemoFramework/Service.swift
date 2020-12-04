@@ -17,11 +17,10 @@ public class Service{
     }
     
     static var bundle:Bundle {
-           let podBundle = Bundle(for: EntryVC.self)
-
-           let bundleURL = podBundle.url(forResource: "MyDemoFramework", withExtension: "bundle")
-           return Bundle(url: bundleURL!)!
-       }
+        let podBundle = Bundle(for: EntryVC.self)
+        let bundleURL = podBundle.url(forResource: "MyDemoFramework", withExtension: "bundle")
+        return Bundle(url: bundleURL!)!
+    }
        
     public static func performSegueToFrameworkVC(caller: UIViewController) {
            let podBundle = Bundle(for: EntryVC.self)
@@ -33,5 +32,10 @@ public class Service{
            let storyboard = UIStoryboard(name: "First", bundle: podBundle)
            let vc = storyboard.instantiateInitialViewController()!
            caller.present(vc, animated: true, completion: nil)
+    }
+    open func presentFirstViewControllerOn(_ viewController:UIViewController) {
+        let storyBoard : UIStoryboard = UIStoryboard(name: "First", bundle:nil)
+        let nextViewController = storyBoard.instantiateViewController(withIdentifier: "EntryVC") as! EntryVC
+        viewController.present(nextViewController, animated:true, completion:nil)
     }
 }
