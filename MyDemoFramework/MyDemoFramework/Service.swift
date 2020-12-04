@@ -24,7 +24,8 @@ public class Service{
        
     public static func performSegueToFrameworkVC(caller: UIViewController) {
            let podBundle = Bundle(for: EntryVC.self)
-           let storyboard = UIStoryboard(name: "First", bundle: podBundle)
+           let frameworkBundle = Bundle(identifier: "EntryVC")
+           let storyboard = UIStoryboard(name: "First", bundle: frameworkBundle)
            let vc = storyboard.instantiateInitialViewController()!
            caller.present(vc, animated: true, completion: nil)
     }
