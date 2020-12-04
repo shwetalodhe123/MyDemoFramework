@@ -19,7 +19,11 @@ public class EntryVC: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-   
+   open func presentFirstViewControllerOn(_ viewController:UIViewController) {
+       let storyBoard : UIStoryboard = UIStoryboard(name: "First", bundle:nil)
+       let nextViewController = storyBoard.instantiateViewController(withIdentifier: "EntryVC") as! EntryVC
+       viewController.present(nextViewController, animated:true, completion:nil)
+   }
 
     
 
