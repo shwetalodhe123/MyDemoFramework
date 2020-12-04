@@ -23,8 +23,8 @@ public class EntryVC: UIViewController {
 //       let storyBoard : UIStoryboard = UIStoryboard(name: "First", bundle:nil)
 //       let nextViewController = storyBoard.instantiateViewController(withIdentifier: "EntryVC") as! EntryVC
 //       viewController.present(nextViewController, animated:true, completion:nil)
-    
-    let newViewController = SecondViewController(nibName: "SecondViewController", bundle: nil)
+    let frameworkBundle = Bundle(identifier: "com.theiOSDev.MyDemoFramework")
+    let newViewController = SecondViewController(nibName: "SecondViewController", bundle: frameworkBundle)
            viewController.present(newViewController, animated:true, completion:nil)
    }
 
