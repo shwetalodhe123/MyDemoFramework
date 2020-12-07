@@ -22,10 +22,10 @@ public class Service{
         return Bundle(url: bundleURL!)!
     }
     public static func performSegueToFrameworkVC(caller: UIViewController) {
+        let storyboard = UIStoryboard(name: "First", bundle: bundle)
+        let vc = storyboard.instantiateInitialViewController()!
         DispatchQueue.main.async {
-             let storyboard = UIStoryboard(name: "First", bundle: bundle)
-                   let vc = storyboard.instantiateInitialViewController()!
-                   caller.present(vc, animated: true, completion: nil)
+            caller.present(vc, animated: true, completion: nil)
         }
        
     }
