@@ -8,7 +8,7 @@ Pod::Spec.new do |spec|
   spec.license      = "MIT"
   spec.author       = { "Shweta Lodhe" => "shwetalodhe@gmail.com" }
   spec.platform     = :ios, "11.0"
-  spec.source       = { :git => "https://github.com/shwetalodhe123/MyDemoFramework.git", :tag => "1.0.0" }
+  spec.source       = { :git => "https://github.com/shwetalodhe123/MyDemoFramework.git",:branch => "main", :tag => "1.0.0" }
   spec.source_files = "MyDemoFramework/**/*.swift"
   spec.swift_versions = "4.2"
   # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
