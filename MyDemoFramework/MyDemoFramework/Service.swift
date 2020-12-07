@@ -37,4 +37,14 @@ public class Service{
         let newViewController = SecondViewController(nibName: "SecondViewController", bundle: nil)
         viewController.present(newViewController, animated:true, completion:nil)
     }
+   
+
+        public static func getEntryVC() -> UIViewController {
+
+                let storyboard = UIStoryboard.init(name: "First", bundle: Bundle(for: self))
+                let entryVC = storyboard.instantiateViewController(withIdentifier: "EntryVC")
+                return entryVC
+        }
+
+    
 }
