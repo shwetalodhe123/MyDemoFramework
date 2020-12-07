@@ -17,6 +17,7 @@
 		996A970B257E914F005E1F46 /* First.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99584C4625794DDD00A9B03D /* First.storyboard */; };
 		996A970C257E914F005E1F46 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 995D9559257A277400252022 /* Storyboard.storyboard */; };
 		996A970D257E914F005E1F46 /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 995D955C257A3B3B00252022 /* SecondViewController.xib */; };
+		996A970E257E9239005E1F46 /* myFramework.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 996A9705257E913F005E1F46 /* myFramework.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -183,6 +184,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				996A970E257E9239005E1F46 /* myFramework.bundle in Resources */,
 				99584C4725794DDD00A9B03D /* First.storyboard in Resources */,
 				995D955A257A277400252022 /* Storyboard.storyboard in Resources */,
 				995D955E257A3B3B00252022 /* SecondViewController.xib in Resources */,
