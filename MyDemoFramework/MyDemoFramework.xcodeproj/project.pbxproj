@@ -14,7 +14,9 @@
 		995D955A257A277400252022 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 995D9559257A277400252022 /* Storyboard.storyboard */; };
 		995D955D257A3B3B00252022 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 995D955B257A3B3B00252022 /* SecondViewController.swift */; };
 		995D955E257A3B3B00252022 /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 995D955C257A3B3B00252022 /* SecondViewController.xib */; };
-		996A9700257E8BD1005E1F46 /* MyDemoFramework.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 996A96FF257E8BD1005E1F46 /* MyDemoFramework.bundle */; };
+		996A970B257E914F005E1F46 /* First.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99584C4625794DDD00A9B03D /* First.storyboard */; };
+		996A970C257E914F005E1F46 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 995D9559257A277400252022 /* Storyboard.storyboard */; };
+		996A970D257E914F005E1F46 /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 995D955C257A3B3B00252022 /* SecondViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,11 +29,19 @@
 		995D9559257A277400252022 /* Storyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 		995D955B257A3B3B00252022 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		995D955C257A3B3B00252022 /* SecondViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondViewController.xib; sourceTree = "<group>"; };
-		996A96FF257E8BD1005E1F46 /* MyDemoFramework.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MyDemoFramework.bundle; sourceTree = "<group>"; };
+		996A9705257E913F005E1F46 /* myFramework.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = myFramework.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		996A9707257E913F005E1F46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		99584C34257928F000A9B03D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		996A9702257E913F005E1F46 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -45,8 +55,8 @@
 			isa = PBXGroup;
 			children = (
 				99584C39257928F000A9B03D /* MyDemoFramework */,
+				996A9706257E913F005E1F46 /* myFramework */,
 				99584C38257928F000A9B03D /* Products */,
-				996A96FF257E8BD1005E1F46 /* MyDemoFramework.bundle */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +64,7 @@
 			isa = PBXGroup;
 			children = (
 				99584C37257928F000A9B03D /* MyDemoFramework.framework */,
+				996A9705257E913F005E1F46 /* myFramework.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -71,6 +82,14 @@
 				995D955C257A3B3B00252022 /* SecondViewController.xib */,
 			);
 			path = MyDemoFramework;
+			sourceTree = "<group>";
+		};
+		996A9706257E913F005E1F46 /* myFramework */ = {
+			isa = PBXGroup;
+			children = (
+				996A9707257E913F005E1F46 /* Info.plist */,
+			);
+			path = myFramework;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -105,6 +124,23 @@
 			productReference = 99584C37257928F000A9B03D /* MyDemoFramework.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		996A9704257E913F005E1F46 /* myFramework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 996A9708257E913F005E1F46 /* Build configuration list for PBXNativeTarget "myFramework" */;
+			buildPhases = (
+				996A9701257E913F005E1F46 /* Sources */,
+				996A9702257E913F005E1F46 /* Frameworks */,
+				996A9703257E913F005E1F46 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = myFramework;
+			productName = myFramework;
+			productReference = 996A9705257E913F005E1F46 /* myFramework.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -117,6 +153,9 @@
 					99584C36257928F000A9B03D = {
 						CreatedOnToolsVersion = 11.3.1;
 						LastSwiftMigration = 1130;
+					};
+					996A9704257E913F005E1F46 = {
+						CreatedOnToolsVersion = 11.3.1;
 					};
 				};
 			};
@@ -134,6 +173,7 @@
 			projectRoot = "";
 			targets = (
 				99584C36257928F000A9B03D /* MyDemoFramework */,
+				996A9704257E913F005E1F46 /* myFramework */,
 			);
 		};
 /* End PBXProject section */
@@ -146,7 +186,16 @@
 				99584C4725794DDD00A9B03D /* First.storyboard in Resources */,
 				995D955A257A277400252022 /* Storyboard.storyboard in Resources */,
 				995D955E257A3B3B00252022 /* SecondViewController.xib in Resources */,
-				996A9700257E8BD1005E1F46 /* MyDemoFramework.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		996A9703257E913F005E1F46 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				996A970B257E914F005E1F46 /* First.storyboard in Resources */,
+				996A970C257E914F005E1F46 /* Storyboard.storyboard in Resources */,
+				996A970D257E914F005E1F46 /* SecondViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -160,6 +209,13 @@
 				995D955D257A3B3B00252022 /* SecondViewController.swift in Sources */,
 				99584C432579290400A9B03D /* Service.swift in Sources */,
 				99584C4925794ED000A9B03D /* EntryVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		996A9701257E913F005E1F46 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +397,40 @@
 			};
 			name = Release;
 		};
+		996A9709257E913F005E1F46 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = BV4J8SANFW;
+				INFOPLIST_FILE = myFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.theiOSDev.myFramework;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		996A970A257E913F005E1F46 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = BV4J8SANFW;
+				INFOPLIST_FILE = myFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.theiOSDev.myFramework;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -358,6 +448,15 @@
 			buildConfigurations = (
 				99584C40257928F000A9B03D /* Debug */,
 				99584C41257928F000A9B03D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		996A9708257E913F005E1F46 /* Build configuration list for PBXNativeTarget "myFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				996A9709257E913F005E1F46 /* Debug */,
+				996A970A257E913F005E1F46 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
