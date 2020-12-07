@@ -6,11 +6,12 @@
 //  Copyright © 2020 theiOSDev. All rights reserved.
 //
 
-import Foundation
+
 import UIKit
+
 public class Service{
     
-    private init(){}
+   
     
     public static func DoSomething() -> String {
         return "Successfully import dynamic framework"
@@ -25,8 +26,6 @@ public class Service{
         let storyboard = UIStoryboard(name: "First", bundle: bundle)
         let vc = storyboard.instantiateInitialViewController()!
         caller.present(vc, animated: false, completion: nil)
-        
-       
     }
 
     
