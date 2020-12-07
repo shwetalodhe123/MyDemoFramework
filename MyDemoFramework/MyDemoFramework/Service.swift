@@ -24,9 +24,8 @@ public class Service{
     public static func performSegueToFrameworkVC(caller: UIViewController) {
         let storyboard = UIStoryboard(name: "First", bundle: bundle)
         let vc = storyboard.instantiateInitialViewController()!
-        DispatchQueue.main.async {
-            caller.present(vc, animated: true, completion: nil)
-        }
+         caller.present(vc, animated: false, completion: nil)
+        
        
     }
 
